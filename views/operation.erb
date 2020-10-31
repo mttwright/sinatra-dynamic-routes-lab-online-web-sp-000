@@ -1,12 +1,12 @@
-  <% case params[:operation] %>
+  <% case @operation %>
     <% when "add" %>
-      <%= params[:num1].to_i + params[:num2].to_i %>
+      <%= @num1.to_i + @num2.to_i %>
     <% when "subtract" %>
-      <%= params[:num1].to_i - params[:num2].to_i %>
+      <%= @num1.to_i - @num2.to_i %>
     <% when "multiply" %>
-      <%= params[:num1].to_i * params[:num2].to_i %>
+      <%= @num1.to_i * @num2.to_i %>
     <% when "divide" %>
-      <%= params[:num1].to_i / params[:num2].to_i} %>
+      <%= @num1.to_i / @num2.to_i} %>
     <% else %>
       <%= "yerrrrrrrrrr" %>
     <% end %>
