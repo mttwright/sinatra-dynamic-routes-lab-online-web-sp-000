@@ -7,11 +7,11 @@
 <body>
   <% if @operation == "add" %>
     <p><%= @num1 + @num2 %></p>
-  <% if @operation == "subtract" %>
+  <% elsif @operation == "subtract" %>
     <p><%= @num1 - @num2 %></p>
-  <% if @operation == "multiply" %>
+  <% elsif @operation == "multiply" %>
     <p><%= @num1 * @num2 %></p>
-  <% if @operation == "divide" %>
+  <% elsif @operation == "divide" %>
     <p><%= @num1 / @num2 %></p>
   <% else %>
     <p>yerrrrrrrrrr</p>
