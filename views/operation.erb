@@ -1,12 +1,12 @@
   <% case @operation %>
     <% when "add" %>
-      <%= @num1.to_i + @num2.to_i %>
+      <%= @num1 + @num2 %>
     <% when "subtract" %>
-      <%= @num1.to_i - @num2.to_i %>
+      <%= @num1 - @num2 %>
     <% when "multiply" %>
-      <%= @num1.to_i * @num2.to_i %>
+      <%= @num1 * @num2 %>
     <% when "divide" %>
-      <%= @num1.to_i / @num2.to_i %>
+      <%= @num1 / @num2 %>
     <% else %>
       <%= "yerrrrrrrrrr" %>
     <% end %>
