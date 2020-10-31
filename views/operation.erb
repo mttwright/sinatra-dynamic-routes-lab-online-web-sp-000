@@ -6,6 +6,7 @@
 <html>
 
 <body>
+  <% @operation = "ham" %>
   <% case @operation %>
     <% when "add" %>
       <p><%= "#{@num1 + @num2}" %></p>
