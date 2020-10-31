@@ -1,8 +1,8 @@
   <% case params[:operation] %>
     <% when "add" %>
-      <%= "You ran out of gas." %>
+      <%= "#{params[:num1].to_i + params[:num2].to_i}" %>
     <% when "subtract" %>
-      <%= "The tank is almost empty. Quickly, find a gas station!" %>
+      <%= "#{params[:num1].to_i - params[:num2].to_i}" %>
     <% when "multiply" %>
       <%= "You should be ok for now." %>
     <% when "divide" %>
